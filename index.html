@@ -9,6 +9,23 @@
 </head>
 <body>
     <div class="container">
+        <div class="form signin">
+            <h2>Sign In</h2>
+            <div class="inputBox">
+                <input type="text" required="required" class="input">
+                <i class="fa-regular fa-user"></i>
+                <span>username</span>
+            </div>
+            <div class="inputBox">
+                <input type="text" required="required" class="input">
+                <i class="fa-solid fa-lock"></i>
+                <span>password</span>
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="Login" class="cbutton"  >
+            </div>
+            <p>Not Registered ? <a href="#" class="create" >Create an account</a></p>
+        </div>
         <div class="form signup">
             <h2>Sign Up</h2>
             <div class="inputBox">
@@ -32,27 +49,11 @@
                 <span>confirm password</span>
             </div>
             <div class="inputBox">
-                <input type="submit" value="Create account" class="cbutton">
+                <input type="submit" value="Create account" class="cbutton" onclick="redirectToHomePage()">
             </div>
             <p>Already a member ? <a href="#" class="login">Log in</a></p>
         </div>
-        <div class="form signin">
-            <h2>Sign In</h2>
-            <div class="inputBox">
-                <input type="text" required="required" class="input">
-                <i class="fa-regular fa-user"></i>
-                <span>username</span>
-            </div>
-            <div class="inputBox">
-                <input type="text" required="required" class="input">
-                <i class="fa-solid fa-lock"></i>
-                <span>password</span>
-            </div>
-            <div class="inputBox">
-                <input type="submit" value="Login" class="cbutton">
-            </div>
-            <p>Not Registered ? <a href="#" class="create">Create an account</a></p>
-        </div>
+        
 
 
     </div>
@@ -66,6 +67,11 @@
         create.onclick =function(){
             container.classList.remove('signinForm')
         }
+        function redirectToHomePage() {
+                    
+                    window.location.href = "developerform.html";
+                }
+
     </script>
 </body>
 </html>

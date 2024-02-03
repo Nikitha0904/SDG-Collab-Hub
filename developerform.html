@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script src="/bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Document</title>
+    <style>
+        .custom-highlight .form-control:focus {
+            border-color: #6c757d;
+            box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.25);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="m-5 p-5 mt-1 pt-1">
+        <h1 class="h1 text-center">Developer Registration Form</h1><br>
+        <form action="" class="m-5">
+            <div class="form-group row  m-3">
+                <label for="exampleFormControlInput1" class="col-sm-3 col-form-label h3"> Name</label>
+                <div class="col-sm-10">
+                    <div class="input-group custom-highlight">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"
+                                style="font-size: 1.40rem; border-radius: 0; margin-bottom: -25px;"><i
+                                    class="fas fa-user"></i></span>
+                        </div>
+                        <input class="form-control " type="text" placeholder="Name">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row  m-3">
+                <label for="exampleFormControlInput1" class="col-sm-3 col-form-label h3">Email</label>
+                <div class="col-sm-10">
+                    <div class="input-group custom-highlight">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"
+                                style="font-size: 1.40rem; border-radius: 0; margin-bottom: -25px;"><i
+                                    class="fas fa-user"></i></span>
+                        </div>
+                        <input class="form-control" type="text" placeholder="Email">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row  m-3">
+                <label for="exampleFormControlInput1" class="col-sm-3 col-form-label h3">Work Type</label>
+                <div class="col-sm-10">
+                    <div class="input-group custom-highlight">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"
+                                style="font-size: 1.40rem; border-radius: 0; margin-bottom: -25px;"><i
+                                    class="fa-solid fa-list"></i></span>
+                        </div>
+                        <!--<input class="form-control" type="text" placeholder="Select your Department/Office">-->
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option value="" disabled selected>WorkType </option>
+                            <option value="option1">ONLINE</option>
+                            <option value="option2">OFFLINE</option>
+                            <!-- <option value="option3">Government Organizations</option>
+                            <option value="option3">Non-Governmental Organizations (NGOs)</option>
+                            <option value="option3">International Organizations</option>
+                            <option value="option3">Social Enterprises</option>
+                            <option value="option3">Educational Institutions</option> -->
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row  m-3">
+                <label for="exampleFormControlInput1" class="col-sm-3 col-form-label h3">Educatioanl Qualification</label>
+                <div class="col-sm-10">
+                    <div class="input-group custom-highlight">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"
+                                style="font-size: 1.40rem; border-radius: 0; margin-bottom: -25px;"><i
+                                    class="fas fa-user"></i></span>
+                        </div>
+                        <input class="form-control" type="text" placeholder="User Name">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row  m-3">
+                <label for="exampleFormControlInput1" class="col-sm-3 col-form-label h3">Address</label>
+                <div class="col-sm-10">
+                    <div class="input-group custom-highlight">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"
+                                style="font-size: 1.40rem; border-radius: 0; margin-bottom: -25px;">
+                                <!-- <i class="fa-solid fa-envelope"></i> -->
+                            </span>
+                        </div>
+                        <textarea name="Address" id="" cols="100" rows="7"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row  m-3">
+                <label for="exampleFormControlInput1" class="col-sm-3 col-form-label h3">Contact No.</label>
+                <div class="col-sm-10">
+                    <div class="input-group custom-highlight">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"
+                                style="font-size: 1.40rem; border-radius: 0; margin-bottom: -25px;"><i
+                                    class="fa-solid fa-phone"></i></span>
+                        </div>
+                        <input class="form-control" type="text" placeholder="(639)">
+                    </div>
+                </div>
+            </div>
+            <div class="text-center"><button type="submit" class="btn btn-warning my-1 h3"
+                    style="width: 200px; color: white;">Submit&nbsp;&nbsp;<i class="fa-brands fa-telegram"
+                        style="font-size: 1.5rem; color: white;"></i></button></div>
+        </form>
+    </div>
+</body>
+
+</html>

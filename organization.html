@@ -36,9 +36,13 @@
                 <i class="fa-solid fa-lock"></i>
                 <span>confirm password</span>
             </div>
+            
             <div class="inputBox">
-                <input type="submit" value="Create account" class="cbutton">
+                <input type="submit" value="Create account" class="cbutton" id="cb" onclick="redirectToHomePage()">
             </div>
+            
+            
+            
             <p>Already a member ? <a href="#" class="login">Log in</a></p>
         </div>
         <div class="form signin">
@@ -71,6 +75,12 @@
         create.onclick =function(){
             container.classList.remove('signinForm')
         }
+      
+                function redirectToHomePage() {
+                    
+                    window.location.href = "form.html";
+                }
+           
     </script>
 </body>
 </html>
